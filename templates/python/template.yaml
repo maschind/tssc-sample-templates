@@ -272,7 +272,7 @@ spec:
           # actual src image will be updated by the CI pipeline.
           srcImage: '${{ parameters.imageRegistry }}/${{ parameters.imageOrg }}/${{ parameters.imageName }}'
           port: 8081
-          argoNS: tssc-gitops
+          argoNS: rhdh-gitops
           argoProject: default
           ciType: ${{ parameters.ciType }}
           gitRepoOwner: ${{ parameters.workspace if parameters.hostType === 'Bitbucket' else (parameters.ghOwner if parameters.hostType === 'GitHub' else parameters.glOwner) }}
